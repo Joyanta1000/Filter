@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .hide {
+            display: none;
+        }
+        #filterableLoc{
+            /* position: absolute;
+            float: left;
+            top:20px; */
+        }
+    </style>
+  </head>
+  <body>
+    <div class="form-group has-search col-xs-12 col-md-12">
+      <h4>Data Filtering</h4>
+      <span class="fa fa-search form-control-feedback"></span>
+      <input
+        type="text"
+        onkeyup="toFilterLoc()"
+        id="searchLocation"
+        class="form-control"
+        placeholder="Search"
+        value=""
+      />
+    </div>
+
+    <div class="suggestion toFilter col-xs-12 col-md-12">
+      <li class="district">
+        <a
+        href=""
+        data-id="0"
+        data-view-type="location_id"
+        id="filterableLoc"
+      >
+        Dhaka
+      </a>
+      </li>
+       
+      <li class="district">
+        <a
+        href=""
+        data-id="1"
+        data-view-type="location_id"
+        id="filterableLoc"
+      >
+        Chattogram
+      </a>
+      </li>
+     
+      <li class="district">
+        <a
+        href=""
+        data-id="2"
+        data-view-type="location_id"
+        id="filterableLoc"
+        
+      >
+        Rajshahi
+      </a>
+      </li>
+      
+    </div>
+    <script src="./js/searchFilter.js"></script>
+  </body>
+</html>
